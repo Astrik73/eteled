@@ -428,6 +428,11 @@ class ChartingState extends MusicBeatState
 				currentIndex++;
 			}
 		}
+		
+		#if android
+		addVirtualPad(LEFT_FULL, A_B);
+		#end
+		
 		super.create();
 	}
 
